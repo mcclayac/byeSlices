@@ -15,10 +15,16 @@ func main() {
 	b := make([]byte, 100)
 	n, err := f.Read(b)
 
-	fmt.Printf("Chars:%d % x\n", n, b)   /// in Hex
-	fmt.Printf("Chars:%d % c\n", n, b)   // in Char
+	fmt.Printf("Chars:%d % x\n", n, b) /// in Hex
+	fmt.Printf("Chars:%d % c\n", n, b) // in Char
 	stringVersion := string(b)
-	fmt.Printf("Chars:%d % s\n", n, stringVersion)
+	fmt.Printf("Chars:%d %s\n", n, stringVersion)
+
+	fmt.Printf("============================\n")
+
+	// conversion to byte string
+	//someString := "Foo bar"
+	//f.write([]byte(someString))
 
 	//f.Write([]byte(stringVersion))
 
@@ -48,8 +54,6 @@ func main() {
 	Read reads up to len(b) bytes from the File. It returns the number of
 	bytes read and any error encountered. At end of file, Read returns 0,
 		io.EOF.
-*/
-
-
+	*/
 
 }
